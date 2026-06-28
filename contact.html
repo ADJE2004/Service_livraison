@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benin Livraisons | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Benin<span>Livraisons</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-btn">Commander</a>
+            <button class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prêt à vous faire livrer ?</h2>
+                <p>Remplissez le formulaire ci-dessous ou passez directement commande via WhatsApp pour une prise en charge immédiate.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Formulaire -->
+                <div class="contact-form-container">
+                    <form id="deliveryForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" required placeholder="Ex: Jean Koffi">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numéro de Téléphone (WhatsApp de préférence)</label>
+                            <input type="tel" id="phone" required placeholder="Ex: +229 97 00 00 00">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Type de Service</label>
+                            <select id="service" required>
+                                <option value="" disabled selected>Choisir un service...</option>
+                                <option value="Livraison de colis">Livraison de colis / Marchandises</option>
+                                <option value="Course Express">Course Express (Pli urgent, clés...)</option>
+                                <option value="Achats & Shopping">Achats au marché / Supermarché</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Détails de la demande (Lieu de départ et d'arrivée)</label>
+                            <textarea id="details" rows="4" required placeholder="Ex: Ramasser un colis à Fidjrossè pour livrer à Calavi Kpota. Contenu: Vêtements."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer ma demande</button>
+                    </form>
+                </div>
+
+                <!-- Infos Directes -->
+                <div class="contact-info">
+                    <h3>Canaux Directs</h3>
+                    <p>Pour les urgences, contactez-nous directement sur nos plateformes :</p>
+                    
+                    <a href="https://wa.me/22900000000" target="_blank" class="whatsapp-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>Commander via WhatsApp</h4>
+                            <p>Cliquez ici pour chatter en direct (Le plus rapide !)</p>
+                        </div>
+                    </a>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Appels Téléphoniques</h4>
+                            <p>+229 97 00 00 00 / +229 95 00 00 00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@beninlivraisons.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div>
+                            <h4>Paiements Acceptés</h4>
+                            <p>MTN Mobile Money, Moov Money, Espèces à la livraison.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Benin Livraisons. Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/22900000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
