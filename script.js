@@ -34,4 +34,4 @@ if (deliveryForm) {
         
         window.open(whatsappUrl, '_blank');
     });
-}
+} //forcer le rebuild
