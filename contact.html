@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benin Livraisons | Contact</title>
+    <title>YIWA | Contact</title>
+    <!-- Google Fonts - Montserrat (Charte Officielle) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Header / Navbar -->
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">Benin<span>Livraisons</span></a>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="YIWA - Vos courses en toute sureté" title="YIWA">
+            </a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">À Propos</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html" class="active-link">Contact</a></li>
                 </ul>
             </nav>
             <a href="contact.html" class="btn btn-primary nav-btn">Commander</a>
@@ -27,89 +32,77 @@
         </div>
     </header>
 
-    <section class="contact-section">
+    <!-- Section Titre de la Page -->
+    <section class="page-header">
         <div class="container">
-            <div class="section-title">
-                <h2>Prêt à vous faire livrer ?</h2>
-                <p>Remplissez le formulaire ci-dessous ou passez directement commande via WhatsApp pour une prise en charge immédiate.</p>
+            <h1 class="section-title">Contactez-nous</h1>
+        </div>
+    </section>
+
+    <!-- Formulaire et Infos de Contact -->
+    <section class="container">
+        <div class="contact-grid">
+            <!-- Formulaire à gauche -->
+            <div class="card">
+                <h3 style="margin-bottom: 25px; color: #172B52;">Formulaire de Demande de Course</h3>
+                <form id="deliveryForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet / Entreprise</label>
+                        <input type="text" id="name" class="form-control" placeholder="Ex: Jean Adjovi" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de Téléphone (WhatsApp)</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Ex: 01 57 48 56 66" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Type de Service souhaité</label>
+                        <select id="service" class="form-control" required>
+                            <option value="" disabled selected>Choisissez une option...</option>
+                            <option value="Livraison de colis">Livraison de Colis</option>
+                            <option value="Course Express">Course Express (Urgente)</option>
+                            <option value="Achats & Marché">Achats & Shopping</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Détails de la course (Point A vers Point B, nature du colis)</label>
+                        <textarea id="details" class="form-control" rows="4" placeholder="Donnez le plus de précisions possibles..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+                </form>
             </div>
 
-            <div class="contact-grid">
-                <!-- Formulaire -->
-                <div class="contact-form-container">
-                    <form id="deliveryForm">
-                        <div class="form-group">
-                            <label for="name">Nom Complet</label>
-                            <input type="text" id="name" required placeholder="Ex: Jean Koffi">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Numéro de Téléphone (WhatsApp de préférence)</label>
-                            <input type="tel" id="phone" required placeholder="Ex: +229 97 00 00 00">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Type de Service</label>
-                            <select id="service" required>
-                                <option value="" disabled selected>Choisir un service...</option>
-                                <option value="Livraison de colis">Livraison de colis / Marchandises</option>
-                                <option value="Course Express">Course Express (Pli urgent, clés...)</option>
-                                <option value="Achats & Shopping">Achats au marché / Supermarché</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="details">Détails de la demande (Lieu de départ et d'arrivée)</label>
-                            <textarea id="details" rows="4" required placeholder="Ex: Ramasser un colis à Fidjrossè pour livrer à Calavi Kpota. Contenu: Vêtements."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Envoyer ma demande</button>
-                    </form>
+            <!-- FAQ & Liens à droite -->
+            <div class="contact-info">
+                <h3 style="color: #172B52; margin-bottom: 20px;">FAQ - Réponses rapides</h3>
+                
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h4 style="color: #005898; font-size: 16px; margin-bottom: 5px;"><i class="fas fa-clock"></i> Quels sont vos horaires ?</h4>
+                    <p style="font-size: 14px; color: #4D4D4D;">Nous sommes disponibles 7j/7, de 07h00 à 22h00 pour toutes vos urgences.</p>
                 </div>
 
-                <!-- Infos Directes -->
-                <div class="contact-info">
-                    <h3>Canaux Directs</h3>
-                    <p>Pour les urgences, contactez-nous directement sur nos plateformes :</p>
-                    
-                    <a href="https://wa.me/+22959497948" target="_blank" class="whatsapp-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <h4>Commander via WhatsApp</h4>
-                            <p>Cliquez ici pour chatter en direct (Le plus rapide !)</p>
-                        </div>
-                    </a>
-
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Appels Téléphoniques</h4>
-                            <p>+229 97 00 00 00 / +229 95 00 00 00</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>contact@beninlivraisons.com</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <div>
-                            <h4>Paiements Acceptés</h4>
-                            <p>MTN Mobile Money, Moov Money, Espèces à la livraison.</p>
-                        </div>
-                    </div>
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h4 style="color: #005898; font-size: 16px; margin-bottom: 5px;"><i class="fas fa-money-bill-wave"></i> Comment se calculent les tarifs ?</h4>
+                    <p style="font-size: 14px; color: #4D4D4D;">Le prix est fixé selon la distance exacte entre le point de ramassage et le point de livraison. Contactez-nous pour une estimation immédiate.</p>
                 </div>
+
+                <a href="https://wa.me/2290157485666" target="_blank" class="whatsapp-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>Commander via WhatsApp</h4>
+                        <p>Une urgence ? Cliquez ici pour valider une course immédiatement.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Benin Livraisons. Tous droits réservés.</p>
+            <p>&copy; 2026 YIWA - Vos courses en toute sureté. Tous droits réservés.</p>
             <div class="socials">
                 <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="https://wa.me/22900000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/2290157485666" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
