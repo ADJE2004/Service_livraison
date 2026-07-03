@@ -111,6 +111,11 @@ header {
     font-family: 'Montserrat', sans-serif;
     transition: var(--transition);
     text-align: center;
+
+    border: none;               /* Supprime la bordure grise par défaut des mobiles */
+    outline: none;              /* Supprime le contour bleu/noir au clic sur mobile */
+    -webkit-appearance: none;   /* Force iOS/Safari à abandonner son design de bouton natif */
+    appearance: none;
 }
 
 .btn-primary {
